@@ -128,7 +128,7 @@ pub enum C1Token {
 
     // We can also use this variant to define whitespace,
     // or any other matches we wish to skip.
-    #[regex(r"[ \t\f]+", logos::skip)]
+    #[regex(r"[ \t\f\r]+", logos::skip)]
     Whitespace,
 
     #[regex(r"[\n]")]
