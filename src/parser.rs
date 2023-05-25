@@ -171,7 +171,7 @@ impl<'a> C1Parser<'a> {
             self.eat();
             return Ok(());
         } else {
-            return Err(String::from("Expected type keyword"));
+            return Err(self.error_message_current("Expected type keyword"));
         }
     }
 
